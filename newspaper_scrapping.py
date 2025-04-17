@@ -82,7 +82,7 @@ async def fetch_with_playwright():
                 published_time = await time_locator.first.inner_text()
             else:
                 published_time = "No time found"
-            print("published_time", published_time)
+            #print("published_time", published_time)
             news_list.append((title, href, published_time))
             
         await browser.close()
